@@ -489,14 +489,15 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
+                <img alt="Screenshot of web app" src="/assets/img/map-banner.jpeg"
                 style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Blog Web-App<i
+                <span class="card-title activator teal-text hoverline">Atlas Meets Computer<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A simple and extensible blog web-app based on Flask.
+                  A simple Google Maps clone designed and implemented in C++ using location data
+                  and calls to the OpenStreetMaps Database. 
                 </p>
               </div>
               <div class="card-reveal">
@@ -505,9 +506,15 @@
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
+                  <li><b>Tools:</b> C++, stdlib, OSM Database API</li>
+                  <li>Users can view colour-coded maps of major cities like Toronto, Beijing, and Cairo</li>
+                  <li>
+                    Step-by-step best routes between multiple locations, implemented using the A* algorithm
+                    for less 3s response time
+                  </li>
+                  <li>Searchable points of interest like cafes and hospitals based on location tags as well as 
+                    visual location tags that can be clicked for more information and move as map moves
+                  </li>
 
 
                 </ul>
@@ -861,7 +868,7 @@
         <p>
           <a aria-label="Call Mohammed" data-position="top" data-tooltip="Call Mohammed"
             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Mohammed">+1 (250) - 552 - 2829</a></a>
+              aria-label="Call Mohammed">+1 (250)-552-2829</a></a>
         </p>
         <p>
           <a aria-label="Email Mohammed" href="mailto:muji-amir@hotmail.com" target="_blank" data-position="top"
