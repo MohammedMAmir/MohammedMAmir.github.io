@@ -8,3 +8,8 @@
 ### Activity 2:
 ![activity2_repo](github_lab2_activity2.png)
 ![activity2_home_page](contact_personal.png)
+
+### Activity 3:
+![repo change](blue_theme_repo.png)
+![homepage change](blue_theme_homepage.png)
+![projects change](blue_theme_projects.png)
