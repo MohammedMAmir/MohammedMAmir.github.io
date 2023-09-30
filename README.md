@@ -7,4 +7,4 @@
 
 ### Activity 2:
 ![activity2_repo](github_lab2_activity2.png)
-![activity2_home_page](contact_personal)
+![activity2_home_page](contact_personal.png)
