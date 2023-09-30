@@ -13,3 +13,7 @@
 ![repo change](blue_theme_repo.png)
 ![homepage change](blue_theme_homepage.png)
 ![projects change](blue_theme_projects.png)
+
+### Activity 4:
+![places repo](places_repo.png)
+![places page](places_page.png)
