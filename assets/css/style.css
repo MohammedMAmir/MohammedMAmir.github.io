@@ -51,11 +51,11 @@
 }
 
 .github {
-  color: black;
+  color: rgb(3, 126, 105);
 }
 
 .linkedin {
-  color: #31e4bd;
+  color: #018669;
 }
 
 .angellist {
@@ -68,7 +68,7 @@
 }
 
 .linkedin:hover {
-  background-color: #38cea8;
+  background-color: #038d6b;
 }
 
 .angellist:hover {
@@ -76,7 +76,7 @@
 }
 
 .github:hover {
-  background-color: black;
+  background-color: rgb(6, 119, 85);
 }
 
 /* Buttons - Read Me, Contact Us */
