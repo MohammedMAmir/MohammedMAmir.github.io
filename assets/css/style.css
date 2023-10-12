@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #004979;
+  color: #007965;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #005379;
+  color: #00795f;
   background-color: white;
 }
 /* main body */
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7d0ff repeat;
+  background: #a7ffe5 repeat;
   position: relative;
 }
 
@@ -348,7 +348,7 @@ h3 {
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #245e59;
+  border-bottom: 5px solid #245e4d;
 }
 
 #intro.section .teal {
@@ -602,7 +602,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #341e94;
+    color: #1e9476;
     height: 56px;
     line-height: 56px;
   }
