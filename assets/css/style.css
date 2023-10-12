@@ -55,7 +55,7 @@
 }
 
 .linkedin {
-  color: #00b58e;
+  color: #31e4bd;
 }
 
 .angellist {
@@ -68,7 +68,7 @@
 }
 
 .linkedin:hover {
-  background-color: #00b588;
+  background-color: #38cea8;
 }
 
 .angellist:hover {
@@ -237,7 +237,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 115);
+  color: rgb(8, 139, 117);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -549,7 +549,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #008035 !important;
+  color: #008060 !important;
 }
 
 /* .teal-text {
@@ -559,7 +559,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #059263 !important;
+  background-color: #05927f !important;
 }
 
 /* .teal {
