@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(7, 2, 71, 0.4); 
+  border: 6px solid rgba(2, 71, 44, 0.4); 
   border-radius: 50% !important;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .linkedin {
-  color: #002ab5;
+  color: #00b58e;
 }
 
 .angellist {
@@ -68,7 +68,7 @@
 }
 
 .linkedin:hover {
-  background-color: #0077b5;
+  background-color: #00b588;
 }
 
 .angellist:hover {
@@ -237,7 +237,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  color: rgb(16, 202, 115);
   display: block;
   line-height: 100%;
   padding: 10px 0 12px;
@@ -348,7 +348,7 @@ h3 {
 }
 
 #intro.section .underline {
-  border-bottom: 5px solid #24305e;
+  border-bottom: 5px solid #245e59;
 }
 
 #intro.section .teal {
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(33, 243, 180, 0.2);
 }
 
 .card {
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #00244d !important;
+  border-bottom: 3px solid #004d36 !important;
 }
 
 #skills .card.large {
@@ -549,7 +549,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #000d80 !important;
+  color: #008035 !important;
 }
 
 /* .teal-text {
@@ -559,7 +559,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: #054292 !important;
+  background-color: #059263 !important;
 }
 
 /* .teal {
