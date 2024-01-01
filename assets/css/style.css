@@ -370,6 +370,10 @@ h3 {
   background-color: rgba(33, 243, 180, 0.2);
 }
 
+.card medium{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .card {
   margin-bottom: 60px;
 }
