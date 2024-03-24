@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@mervick/mdi-icons": "^4.0.1",
+    "nodemon": "^3.1.0",
     "three": "^0.162.0"
   }
 }
