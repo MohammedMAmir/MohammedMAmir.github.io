@@ -375,7 +375,7 @@ h3 {
 }
 
 .card {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .card .role {
@@ -415,6 +415,10 @@ h3 {
   letter-spacing: 1px;
   margin-top: 2rem;
   text-transform: uppercase;
+}
+
+.card-reveal{
+  overflow-y: scroll;
 }
 
 #experience .card-action {
