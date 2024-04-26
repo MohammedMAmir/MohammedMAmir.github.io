@@ -417,6 +417,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.card-reveal{
+  overflow-y: scroll;
+}
+
 #experience .card-action {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
@@ -511,7 +515,7 @@ a.hoverline:hover {
 }
 
 .card.large .card-image {
-  height: 230px;
+  height: 200px;
 }
 
 .card.large .card-content {
