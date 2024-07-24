@@ -13,7 +13,7 @@
     --bg-color:#000000;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #4bc4b2;
+    --main-color: #00ABAB;
 }
 
 html{
@@ -24,6 +24,20 @@ html{
 body{
     background: var(--bg-color) !important;
     color: var(--text-color) !important;
+}
+
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #000 url(Lo.gif) no-repeat center center;
+}
+
+#content{
+    display: none;
+    opacity: 0;
 }
 
 .header{
