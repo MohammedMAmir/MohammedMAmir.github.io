@@ -41,7 +41,9 @@
         <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
     </head>
     <body>
-        <header class="header">
+        <div id="loader"></div>
+        <div id="content">
+          <header class="header">
             <a href="#home" class="logo">
                 <img class="brand" src="logo2.png"/>
                 Mohammed
@@ -58,131 +60,167 @@
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
-        </header>
+          </header>
 
-        <section class="home" id="home">
-            <div class="home-content">
-                <h1>Hi, My Name's <span>Mohammed</span></h1>
-                <h3 class="text-animation">I'm a <span></span></h3>
-                <p>I'm a software engineer and life-long learner with experience in gearing
-                    technology to it's users. To me, bits are brushes, keyboards are caligraphy,
-                    and code is creative. I aim to build software for people, and solutions 
-                    for society. Let me know how </p>
-                    
-                    <div class="social-icons">
-                        <a href="#"><i class="bx bxl-linkedin"></i></a>
-                        <a href="#"><i class="bx bxl-github"></i></a>
-                        <!--<a href="#"></a>
-                        <a href="#"></a>-->
-                    </div>
+          <section class="home" id="home">
+              <div class="home-content">
+                  <h1>Hi, My Name's <span>Mohammed</span></h1>
+                  <h3 class="text-animation">I'm a <span></span></h3>
+                  <p>I'm a software engineer and life-long learner with experience in gearing
+                      technology to it's users. To me, bits are brushes, keyboards are caligraphy,
+                      and code is creative. I aim to build software for people, and solutions 
+                      for society. Let me know how </p>
+                      
+                      <div class="social-icons">
+                          <a href="#"><i class="bx bxl-linkedin"></i></a>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                          <!--<a href="#"></a>
+                          <a href="#"></a>-->
+                      </div>
 
-                    <div class="butn-group">
-                        <a href="#" class="butn">Hire</a>
-                        <a href="#contact" class="butn">Contact</a>
-                    </div>
-                </div>
-                <div class="home-img">
-                    <img src="static/images/profile2.jpeg" alt="">
-                </div>
-        </section>
-        <section class="about" id="about">
-          <h2 class="heading">About</h2>
-        </section>
-        <section class="skills" id="skills">
-          <h2 class="heading">Skills</h2>
-        </section>
-        <section class="experience" id="experience">
-            <h2 class="heading">Experience</h2>
+                      <div class="butn-group">
+                          <a href="#" class="butn">Hire</a>
+                          <a href="#contact" class="butn">Contact</a>
+                      </div>
+                  </div>
+                  <div class="home-img">
+                      <img src="static/images/profile2.jpeg" alt="">
+                  </div>
+          </section>
+          <section class="about" id="about">
+            <h2 class="heading">About</h2>
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="heading">Skills</h2>
+          </section>
+          <section class="experience" id="experience">
+              <h2 class="heading">Experience</h2>
 
-            <div class="timeline-items">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date odd">
-                        May, 2022 - Aug, 2023
-                    </div>
-                    <div class="timeline-content">
-                        <div class="row">
-                            <!-- <div class="col s12 m10"> -->
-                            <div class="col s10">
-                                <div class="row">
-                                  <div class="col"><a href="https://www.humanendeavour.org/" target="_blank"><h3>Human Endeavour</h3></a></div>
-                                </div>
-                                <div class="row">
-                                  <div class="col">
-                                    <div class="role brown-text text-darken-2">Junior Software Developer</div>
-                                  </div>                       
-                                </div>
+              <div class="timeline-items">
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-date odd">
+                          May, 2022 - Aug, 2023
+                      </div>
+                      <div class="timeline-content">
+                          <div class="row">
+                              <!-- <div class="col s12 m10"> -->
+                              <div class="col s10">
+                                  <div class="row">
+                                    <div class="col"><a href="https://www.humanendeavour.org/" target="_blank"><h3>Human Endeavour</h3></a></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col">
+                                      <div class="role brown-text text-darken-2">Junior Software Developer</div>
+                                    </div>                       
+                                  </div>
+                              </div>
+                              <div class="col s2">
+                                <a href="https://www.humanendeavour.org/" target="_blank"><img alt="Human Endeavour logo"
+                                    src="static/images/logo-footer.png" class="responsive-img center-block" /></a>
+                              </div>
                             </div>
-                            <div class="col s2">
-                              <a href="https://www.humanendeavour.org/" target="_blank"><img alt="Human Endeavour logo"
-                                  src="static/images/logo-footer.png" class="responsive-img center-block" /></a>
-                            </div>
+                            <p>
+                              <ul>
+                                <li>
+                                  Initiated, planned, and administered the design and marketing of a line assistive tablets to aid visually impaired
+                                  users as well as those living with dementia in Activities of Daily Living
+                                </li>
+                                <li>
+                                  Devised infrastructure to quickly replicate and update features and programs on deployed tablets, as well as a system 
+                                  of version control to track software updates
+                                </li>
+                                <li>
+                                  Created clear, concise, and simplified manual to technically assist users and caretakers regarding features of assistive 
+                                  tablets</li>
+                                <li>
+                                  Formulated database to track tablet usage, performance, and inventory to allow for data-driven insights in how to improve 
+                                  and manage products and features
+                                </li>
+                                <li>
+                                  Built a scanner app using Android macros, Google API calls, Google Sheets macros, and Google Apps Scripts to
+                                  automate the scanning, tracking, and management of inventory
+                                </li>
+                                <li>
+                                  <b>Tools:</b> C++, Kotlin, MySQL, Python, Google Apps Scripts, MacroDroid, Tasker, RESTful APIs
+                                </li>
+                              </ul>
+                            </p>
+                      </div>
+                  </div>
+
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-date">
+                          2012 - 2018
+                      </div>
+                      <div class="timeline-content">
+                          <h3>High School</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                              Voluptatum tempore dolor doloremque obcaecati velit, ipsum, 
+                              atione ab fugiat, repellendus quia rem ut quidem quas? 
+                              Quidem modi repellendus odio praesentium alias!</p>
+                      </div>
+                  </div> 
+              </div>
+          </section>
+          <section class="projects" id="projects">
+            <h2 class="heading">Projects</h2>
+          </section>
+          <section class="experience" id="experience">
+              <div class="experience-box">
+                  <h2 class="heading">Experience</h2>
+                  <div class="wrapper">
+                      <div class="experience-item">
+                          <img src="static/images/humanendeavour.png" alt="">
+                          <h2>Human Endeavour</h2>
+                          <div class="location">
+
                           </div>
                           <p>
-                            <ul>
-                              <li>
-                                Initiated, planned, and administered the design and marketing of a line assistive tablets to aid visually impaired
-                                users as well as those living with dementia in Activities of Daily Living
-                              </li>
-                              <li>
-                                Devised infrastructure to quickly replicate and update features and programs on deployed tablets, as well as a system 
-                                of version control to track software updates
-                              </li>
-                              <li>
-                                Created clear, concise, and simplified manual to technically assist users and caretakers regarding features of assistive 
-                                tablets</li>
-                              <li>
-                                Formulated database to track tablet usage, performance, and inventory to allow for data-driven insights in how to improve 
-                                and manage products and features
-                              </li>
-                              <li>
-                                Built a scanner app using Android macros, Google API calls, Google Sheets macros, and Google Apps Scripts to
-                                automate the scanning, tracking, and management of inventory
-                              </li>
-                              <li>
-                                <b>Tools:</b> C++, Kotlin, MySQL, Python, Google Apps Scripts, MacroDroid, Tasker, RESTful APIs
-                              </li>
-                            </ul>
+
                           </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">
-                        2012 - 2018
-                    </div>
-                    <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptatum tempore dolor doloremque obcaecati velit, ipsum, 
-                            atione ab fugiat, repellendus quia rem ut quidem quas? 
-                            Quidem modi repellendus odio praesentium alias!</p>
-                    </div>
-                </div> 
-            </div>
-        </section>
-        <section class="projects" id="projects">
-          <h2 class="heading">Projects</h2>
-        </section>
-        <section class="experience" id="experience">
-            <div class="experience-box">
-                <h2 class="heading">Experience</h2>
-                <div class="wrapper">
-                    <div class="experience-item">
-                        <img src="static/images/humanendeavour.png" alt="">
-                        <h2>Human Endeavour</h2>
-                        <div class="location">
-
-                        </div>
-                        <p>
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        </div>
         <script src="scripts.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+         crossorigin="anonymous"></script>
+         <script type="text/javascript">
+            var loader;
+            function loadNow(opacity){
+              if(opacity <= 0){
+                loader.style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                content = document.getElementById('content')
+                displayContent(0)
+              } else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function (){
+                  loadNow(opacity - 0.1)
+                }, 100);
+              }
+            }
+            function displayContent(opa){
+              if(opa >= 1){
+                return
+              } else{
+                content.style.opacity = opa
+                window.setTimeout(function(){
+                  displayContent(opa + 0.1);
+                }, 100);
+              }
+            }
+
+            document.addEventListener("DOMContentLoaded", function() {
+              window.setTimeout(function() {
+                loader = document.getElementById('loader');
+                loadNow(1);
+              }, 3000);
+            });
+         </script>
     </body>
 </html>
