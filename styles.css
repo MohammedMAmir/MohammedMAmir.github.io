@@ -4,9 +4,9 @@
     box-sizing: border-box;
     text-decoration: none !important;
     border: none;
-    outline: none!;
+    outline: none;
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
 }
 
 :root{
@@ -33,6 +33,7 @@ body{
     z-index: 1;
     overflow: visible;
     background: #000 url(Lo.gif) no-repeat center center;
+    transition: transform 3s;
 }
 
 #content{
