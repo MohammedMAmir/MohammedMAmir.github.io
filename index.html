@@ -89,6 +89,13 @@
           </section>
           <section class="about" id="about">
             <h2 class="heading">About</h2>
+            <div class="wrapper">
+              <div class="about-card">
+                <img src="#" alt="">
+                <h2>About Me</h2>
+                <p></p>
+              </div>
+            </div>
           </section>
           <section class="skills" id="skills">
             <h2 class="heading">Skills</h2>
@@ -199,9 +206,10 @@
                 displayContent(0)
               } else {
                 loader.style.opacity = opacity;
+                loader.style.transform = 'scale(2, 2)';
                 window.setTimeout(function (){
-                  loadNow(opacity - 0.1)
-                }, 100);
+                  loadNow(opacity - 0.05)
+                }, 50);
               }
             }
             function displayContent(opa){
@@ -210,15 +218,15 @@
               } else{
                 content.style.opacity = opa
                 window.setTimeout(function(){
-                  displayContent(opa + 0.1);
-                }, 100);
+                  displayContent(opa + 0.05);
+                }, 50);
               }
             }
 
             document.addEventListener("DOMContentLoaded", function() {
               window.setTimeout(function() {
                 loader = document.getElementById('loader');
-                loadNow(1);
+                loadNow(1, 1);
               }, 3000);
             });
          </script>
