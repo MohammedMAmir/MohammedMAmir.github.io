@@ -328,6 +328,57 @@ span{
     background: var(--second-bg-color);
 }
 
+.about-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about .heading{
+    margin-bottom: 5rem;
+}
+
+.about-box img{
+    width: 15rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+}
+
+.about-card{
+    min-height: 550px;
+    max-width: 450px;
+    background: rgba(0,0,0,0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.about-card:hover{
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.about-card h2{
+    font-size: 2.8rem;
+}
+
 .experience{
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -389,6 +440,11 @@ span{
     top: 10px;
 }
 
+.timeline-header{
+  display: flex;
+  gap: 2rem;
+}
+
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
@@ -425,6 +481,7 @@ span{
 .timeline-content a img{
     float: left;
     max-height: 5rem !important;
+    width: auto;
 }
 
 .timeline-content .role{
@@ -452,3 +509,8 @@ span{
     width: 50px
 }
 
+@media screen and (max-width: 800px){
+    .timeline-content a img{
+        display: none;
+    }
+}
