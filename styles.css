@@ -67,7 +67,7 @@ body{
 }
 
 .brand{
-    margin-right: 5px;
+    margin-right: 4px;
     vertical-align: middle;
     width: 3.5rem;
     height: 3.5rem;
@@ -137,7 +137,7 @@ span{
 .home-content h3{
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 3.4rem;
 }
 
 .home-content h1{
@@ -168,7 +168,7 @@ span{
 }
 
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 500px;
@@ -236,7 +236,7 @@ span{
 }
 
 .text-animation{
-    font-size: 34px;
+    font-size: calc(0.5vw);
     font-weight: 600;
     min-width: 280px;
 }
@@ -287,7 +287,7 @@ span{
     }
     81%,
     100%{
-        content: "Continuous Learner";
+        content: "AI Enthusiast";
     }
 }
 
@@ -471,6 +471,10 @@ span{
     box-shadow: 0 0 25px var(--main-color);
 }
 
+.timeline-header{
+    margin-bottom: 5px;
+}
+
 .timeline-content a{
     font-size: 40px;
     color: white;
@@ -478,8 +482,12 @@ span{
     font-weight: 500;
 }
 
+.header-logo{
+    float: right;
+}
+
 .timeline-content a img{
-    float: left;
+    float: right;
     max-height: 5rem !important;
     width: auto;
 }
