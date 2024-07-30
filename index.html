@@ -46,8 +46,12 @@
         <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
     </head>
     <body>
+        <!-- Website Preloader gif -->
         <div id="loader"></div>
+
+        <!-- Main website content -->
         <div id="content">
+          <!-- Nav Bar -->
           <header class="header">
             <a href="#home" class="logo">
                 <img class="brand" src="logo2.png"/>
@@ -59,13 +63,14 @@
 
             <nav class="nav-bar">
                 <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
           </header>
 
+          <!-- Home Page -->
           <section class="home" id="home">
               <div class="home-content">
                   <h1>Hi, I'm <span>Mohammed</span></h1>
@@ -91,6 +96,13 @@
                       <img src="static/images/profile2.jpeg" alt="">
                   </div>
           </section>
+
+          <!-- About Page -->
+          <section class="about" id="about">
+
+          </section>
+
+          <!-- Experience Page -->
           <section class="experience" id="experience">
               <h2 class="heading">Experience</h2>
               <div class="timeline-items">
@@ -158,54 +170,14 @@
                   </div> 
               </div>
           </section>
-          <section class="skills" id="skills">
-            <h2 class="heading">Skills</h2>
-            <div class="skills-container">
-              <div class="skill-box">
-                <div class="skill-info">
-                  <h4>Languages and Databases</h4>
-                  <p></p>
-                </div>
-              </div>
-              <div class="skill-box">
-                <div class="skill-info">
-                  <h4>Libraries</h4>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <div class="skill-box">
-              <div class="skill-info">
-                <h4>Frameworks</h4>
-                <p></p>
-              </div>
-            </div>
-            <div class="skill-box">
-              <div class="skill-info">
-                <h4>Other Tools and Technologies</h4>
-                <p></p>
-              </div>
-            </div>
-          </section>
+          <!-- Project Page -->
           <section class="projects" id="projects">
             <h2 class="heading">Projects</h2>
           </section>
-          <section class="experience" id="experience">
-              <div class="experience-box">
-                  <h2 class="heading">Experience</h2>
-                  <div class="wrapper">
-                      <div class="experience-item">
-                          <img src="static/images/humanendeavour.png" alt="">
-                          <h2>Human Endeavour</h2>
-                          <div class="location">
 
-                          </div>
-                          <p>
-
-                          </p>
-                      </div>
-                  </div>
-              </div>
+          <!-- Contact Me Page -->
+          <section class="contact" id="contact">
+            <h2 class="heading">Contact</h2>
           </section>
         </div>
         <script src="scripts.js"></script>
@@ -213,12 +185,14 @@
          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
          crossorigin="anonymous"></script>-->
          <script type="text/javascript">
+            // Store the loader globally
             var loader;
+
+            // Recursive function to display and fade out the loader
             function loadNow(opacity){
               if(opacity <= 0){
                 loader.style.display = 'none';
                 document.getElementById('content').style.display = 'block';
-                content = document.getElementById('content')
                 displayContent(0)
               } else {
                 loader.style.opacity = opacity;
@@ -228,7 +202,10 @@
                 }, 50);
               }
             }
+
+            // Recursive function to display and fade in the main content
             function displayContent(opa){
+              content = document.getElementById('content')
               if(opa >= 1){
                 return
               } else{
@@ -239,11 +216,21 @@
               }
             }
 
+            // Call to the display loader or display content function based
+            // on session cookie
             document.addEventListener("DOMContentLoaded", function() {
-              window.setTimeout(function() {
+              if(!sessionStorage.getItem('preLoaded')){
+                sessionStorage.setItem('preLoaded', true);
+                window.setTimeout(function() {
                 loader = document.getElementById('loader');
                 loadNow(1, 1);
-              }, 3000);
+                }, 3000);
+              } else{
+                loader = document.getElementById('loader');
+                loader.style.display = "none";
+                document.getElementById('content').style.display = 'block';
+                displayContent(0);
+              }
             });
          </script>
     </body>
