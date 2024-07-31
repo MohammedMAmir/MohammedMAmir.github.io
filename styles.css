@@ -336,7 +336,17 @@ span{
 }
 
 .skills{
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.skill-item{
+    height: 10.2rem;
+    background-color: var(--main-color);
+    border: 3px transparent;
+    border-radius: 2rem;
+    margin: 1.1rem 1.1rem;
 }
 
 .about-text{
@@ -354,6 +364,15 @@ span{
     margin-top: 3rem;
 }
 
+.about-text h4{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main-color);
+    line-height: 1.8;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 .about-text p{
     font-size: 1.6rem;
     font-weight: 600;
@@ -364,7 +383,6 @@ span{
 .about-text:hover{
     transform: scale(1.03);
 }
-
 
 .about-box img{
     width: 15rem;
