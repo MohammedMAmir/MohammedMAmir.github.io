@@ -11,7 +11,7 @@
 
 :root{
     --bg-color:#000000;
-    --second-bg-color: #131313;
+    --second-bg-color: #181818;
     --text-color: white;
     --main-color: #00ABAB;
 }
@@ -342,7 +342,7 @@ span{
 }
 
 .skill-item{
-    height: 10.2rem;
+    height: 10.4rem;
     background-color: var(--main-color);
     border: 3px transparent;
     border-radius: 2rem;
