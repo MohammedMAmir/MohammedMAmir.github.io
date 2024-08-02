@@ -339,6 +339,7 @@ span{
     flex-direction: column;
     position: relative;
     padding: 70px 0;
+    max-width: 550px;
 }
 
 .skills h4{
@@ -349,7 +350,6 @@ span{
 
 .skills-list{
     height: 11rem;
-    padding: 1rem 1rem;
     overflow: auto;
     white-space: nowrap;
 }
@@ -363,6 +363,11 @@ span{
     padding: 5px 5px;
     height: 7rem;
     width: 7rem;
+    font-size: 6rem;
+}
+
+.skill-item + .skill-item{
+    margin: 5px;
 }
 
 .skill-item img{
@@ -392,6 +397,7 @@ span{
     align-items: baseline;
     padding: 5rem 5rem;
     min-height: 550px;
+    width: 100%;
 }
 
 .about-text h4{
