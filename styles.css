@@ -329,7 +329,7 @@ span{
 
 .about-container{
     display: grid;
-    grid-template-columns: 7fr 8fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
 }
@@ -339,24 +339,23 @@ span{
     flex-direction: column;
     position: relative;
     max-width: 550px;
+    align-items: right;
 }
 
 .skills h4{
     text-align: end;
     font-size: 2rem;
     color: white;
-    margin-bottom: 1rem;
-    margin-top: 4rem;
+    margin-bottom: .9rem;
 }
 
 .skills-list{
-    height: 4.0vw;
+    height: 3.8vw;
     display: grid;
-    max-width: 40vw;
-    position: relative;
+    max-width: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: .8%;
+    gap: 1%;
 }
 
 .skill-item{
@@ -365,23 +364,46 @@ span{
     background-color: var(--main-color);
     border: 3px transparent;
     border-radius: 20%;
-    font-size: 3.8vw;
+    font-size: 3.5vw;
     align-items: center;
     justify-content: center;
     padding: 10%;
+    transition: transform 1s;
 }
 
 .skill-item + .skill-item{
     margin-left: 5px;
 }
 
-.skill-item i{
-    object-fit: contain;
+.skill-section + .skill-section{
+    margin-top: 5.5%;
 }
 
+.skill-item i{
+    object-fit: contain;
+    transition: filter 1s;
+    z-index: 1;
+}
 
-.skill-item br{
-    color: black;
+.skill-name{
+    font-size: 2rem;
+    display: none;
+    color: white;
+    font-weight: 600;
+    transition: display 1s;
+    z-index: 4;
+}
+
+.skill-item:hover{
+    transform: scale(1.08);
+
+    i{
+        display: none;
+    }
+
+    .skill-name{
+        display: block;
+    }
 }
 
 .about-text{
