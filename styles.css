@@ -389,7 +389,7 @@ span{
     font-size: 2rem;
     display: none;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     transition: display 1s;
     z-index: 4;
 }
@@ -454,32 +454,6 @@ span{
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 3rem;
-}
-
-.about-card{
-    min-height: 550px;
-    max-width: 450px;
-    background: rgba(0,0,0,0.7);
-    border: 3px solid rgba(238, 238, 238, 0.2);
-    border-radius: 2rem;
-    margin: 0 2rem;
-    padding: 30px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    color: white;
-    transition: 0.4s ease-in-out;
-}
-
-.about-card:hover{
-    border: 3px solid var(--main-color);
-    transform: translateY(-10px)scale(1.03);
-    box-shadow: 0 0 50px var(--main-color);
-}
-
-.about-card h2{
-    font-size: 2.8rem;
 }
 
 .experience{
@@ -609,6 +583,50 @@ span{
 
 .projects{
     background-color: var(--second-bg-color);
+}
+
+.projects-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projects .heading{
+    margin-bottom: 5rem;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.front-card{
+    background-color: var(--bg-color);
+}
+
+.back-card{
+    background-color: var(--main-color);
+    padding: 30px 60px;
+    text-align: center;
+}
+
+.front-card, .back-card{
+    min-height: 400px;
+    max-width: 350px;
+    border: 3px solid rgba(238,238,238,0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
 }
 
 ::-webkit-scrollbar{
