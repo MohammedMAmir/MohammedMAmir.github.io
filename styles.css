@@ -613,8 +613,8 @@ span{
 .project-item {
     display: grid;
     place-items: center;
-    width: 80vw;
-    max-width: 25.875rem;
+    width: 84vw;
+    max-width: 26rem;
     height: 35.125rem;
     overflow: hidden;
     border-radius: 0.625rem;
@@ -644,7 +644,8 @@ span{
     background: linear-gradient(
       180deg,
       hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.3) 10%,
+      hsla(0, 0%, 0%, 0.05) 1%,
+      hsla(0, 0%, 0%, 0.4) 8%,
       hsl(0, 0%, 0%) 100%
     );
 }
@@ -656,6 +657,7 @@ span{
 .card-title {
 position: relative;
 width: fit-content;
+font-size: 1.8rem;
 width: -moz-fit-content; /* necessary for Firefox  */
 }
 
