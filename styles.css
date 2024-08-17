@@ -28,12 +28,29 @@ body{
 
 #loader{
     position: fixed;
-    width: 100%;
-    height: 100vh;
+    inset: 0px;
+    width: 400px;
+    height: 400px;
     z-index: 1;
-    overflow: visible;
-    background: #000 url(Lo.gif) no-repeat center center;
+    max-width: 100%;
+    max-height: 100%;
     transition: transform 3s;
+    margin: auto;
+}
+
+#prelogo{
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    transition: 0.3s;
+    border-radius: 20%;
+    background: #000 url(logo.gif) no-repeat center center;
+}
+
+#prelogo:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
 }
 
 #content{
