@@ -715,7 +715,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
   
     .project-item:hover,
     .project-item:focus-within {
-      transform: scale(1.05);
+      transform: scale(1);
       transition: transform 500ms ease-in;
     }
   
@@ -726,7 +726,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
     }
   
     .project-item:focus-within .card-content {
-      transition-duration: 0ms;
+      transition-duration: 10ms;
     }
   
     .project-item:hover .card-background,
