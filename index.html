@@ -48,8 +48,9 @@
     </head>
     <body>
         <!-- Website Preloader gif -->
-        <div id="loader"></div>
-
+        <div id="loader">
+          <div id="prelogo"></div>
+        </div>
         <!-- Main website content -->
         <div id="content">
           <!-- Nav Bar -->
@@ -510,18 +511,18 @@
             // Call to the display loader or display content function based
             // on session cookie
             document.addEventListener("DOMContentLoaded", function() {
-              if(!sessionStorage.getItem('preLoaded')){
+             // if(!sessionStorage.getItem('preLoaded')){
                 sessionStorage.setItem('preLoaded', true);
                 window.setTimeout(function() {
                 loader = document.getElementById('loader');
                 loadNow(1, 1);
                 }, 3000);
-              } else{
+              /*} else{
                 loader = document.getElementById('loader');
                 loader.style.display = "none";
                 document.getElementById('content').style.display = 'block';
                 displayContent(0);
-              }
+              }*/
             });
          </script>
     </body>
