@@ -402,6 +402,33 @@ span{
     z-index: 1;
 }
 
+.skill-bubble {
+    position: absolute;
+    display: none;
+	height: 20px;
+	width: 20%;
+	min-width: 2rem;
+	background: var(--main-color);
+	margin: 0 auto;
+	border-radius: 20%;
+	margin-top: 5px;
+	font-size: 2rem;
+	text-align: center;
+    z-index: 20;
+}
+
+.pointer {
+	height: 40px;
+	width: 40px;
+	background: var(--main-color);
+	margin: 0 auto;
+	transform: rotate(45deg);
+	border-radius: 0 0 12px 0;
+	margin-top: -22px;
+	position: relative;
+	left: calc(0.5vw - 50px);
+}
+
 .skill-name{
     font-size: 2rem;
     display: none;
@@ -411,14 +438,14 @@ span{
     z-index: 4;
 }
 
-.skill-item:hover{
-    transform: scale(1.08);
-
-    i{
-        display: none;
+.list-item:hover{
+    .skill-item
+    {
+        transform: scale(1.08);
     }
-
-    .skill-name{
+    
+    .skill-bubble
+    {
         display: block;
     }
 }
