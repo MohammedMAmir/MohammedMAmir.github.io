@@ -405,16 +405,25 @@ span{
 .skill-bubble {
     position: absolute;
     display: none;
-	height: 20px;
-	width: 20%;
-	min-width: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    min-width: 100%;
 	background: var(--main-color);
-	margin: 0 auto;
-	border-radius: 20%;
-	margin-top: 5px;
+	border-radius: 15%;
+	margin-top: -4rem;
 	font-size: 2rem;
 	text-align: center;
+    justify-content: center;
     z-index: 20;
+    transition: display 1s;
+    color: white;
+    font-weight: 500;
+    padding: .5rem;
+}
+
+.list-item{
+    position: relative;
 }
 
 .pointer {
@@ -429,14 +438,6 @@ span{
 	left: calc(0.5vw - 50px);
 }
 
-.skill-name{
-    font-size: 2rem;
-    display: none;
-    color: white;
-    font-weight: 500;
-    transition: display 1s;
-    z-index: 4;
-}
 
 .list-item:hover{
     .skill-item
@@ -446,8 +447,9 @@ span{
     
     .skill-bubble
     {
-        display: block;
+        display: flex;
     }
+    
 }
 
 .about-text{
