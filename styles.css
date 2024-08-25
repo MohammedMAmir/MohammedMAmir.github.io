@@ -69,7 +69,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 50;
 }
 
 .logo{
@@ -409,9 +409,9 @@ span{
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     min-width: 100%;
-	background: var(--main-color);
+	background: var(--bg-color);
 	border-radius: 15%;
-	margin-top: -4rem;
+	margin-top: -4.2rem;
 	font-size: 2rem;
 	text-align: center;
     justify-content: center;
@@ -420,22 +420,28 @@ span{
     color: white;
     font-weight: 500;
     padding: .5rem;
+    border: 1px solid rgba(238, 238, 238, 0.2);
+}
+
+.point-down{
+    justify-content: center;
+    position: absolute;
+    display: none;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 21;
+    transition: display 1s;
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid var(--bg-color);
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    margin: -10px auto 0 auto;
 }
 
 .list-item{
     position: relative;
-}
-
-.pointer {
-	height: 40px;
-	width: 40px;
-	background: var(--main-color);
-	margin: 0 auto;
-	transform: rotate(45deg);
-	border-radius: 0 0 12px 0;
-	margin-top: -22px;
-	position: relative;
-	left: calc(0.5vw - 50px);
 }
 
 
@@ -446,6 +452,10 @@ span{
     }
     
     .skill-bubble
+    {
+        display: flex;
+    }
+    .point-down
     {
         display: flex;
     }
@@ -722,6 +732,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
       transform: translateY(80%);
       transition: transform 500ms ease-out;
       transition-delay: 500ms;
+      
     }
   
     .card-title::after {
@@ -746,6 +757,8 @@ width: -moz-fit-content; /* necessary for Firefox  */
     .project-item:focus-within {
       transform: scale(1);
       transition: transform 500ms ease-in;
+      transition: box-shadow 500ms ease-in;
+      box-shadow: 0 0 25px var(--main-color);
     }
   
     .project-item:hover .card-content,
@@ -807,3 +820,6 @@ width: -moz-fit-content; /* necessary for Firefox  */
     }
 }
 
+.contact{
+    
+}
