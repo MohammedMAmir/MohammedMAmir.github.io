@@ -474,7 +474,7 @@ span{
     text-align: left;
     align-items: baseline;
     padding: 5rem 5rem;
-    min-height: 700px;
+    min-height: 800px;
     width: 100%;
     min-width: 450px;
 }
@@ -917,10 +917,27 @@ width: -moz-fit-content; /* necessary for Firefox  */
     width: 50px
 }
 
-@media screen and (max-width: 800px){
-    .timeline-content a img{
-        display: none;
+@media(max-width: 900px){
+    html{
+        font-size: 55%;
     }
+
+    .skills-list{
+        height: 5vw;
+        padding-bottom: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10%;
+    }
+
+    .skill-item{
+        font-size: 25px;
+    }
+
+    .skill-section + .skill-section{
+        margin-top: 40px;
+    }
+    
 }
 
 @media screen and (max-width: 800px){
@@ -928,3 +945,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
         display: none;
     }
 }
+
+
+
+
