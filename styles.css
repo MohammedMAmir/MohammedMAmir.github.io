@@ -766,8 +766,16 @@ width: -moz-fit-content; /* necessary for Firefox  */
     resize: none;
 }
 
+.contact form textarea{
+    margin: .4rem;
+}
+
 .contact form .butn{
-    margin-top: 2rem;
+    margin-top: 1.8rem;
+}
+
+.contact form .butn:hover{
+    color: white;
 }
 
 .footer{
