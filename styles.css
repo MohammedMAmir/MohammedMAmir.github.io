@@ -926,7 +926,26 @@ width: -moz-fit-content; /* necessary for Firefox  */
     width: 50px
 }
 
-@media(max-width: 1050px) {
+@media(max-width: 1100px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        perspective: 800px;
+        column-gap: 3rem;
+    }
+
+    .nav-bar a{
+        margin-left: 3rem;
+    }
+
+}
+
+@media(max-width: 1000px){
+    html{
+        font-size: 55%;
+    }
+    
     #menu-icon{
         display: block;
     }
@@ -979,18 +998,8 @@ width: -moz-fit-content; /* necessary for Firefox  */
         width: 56vw;    
     }
 
-    .wrapper{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 3rem;
-        perspective: 800px;
-        column-gap: 3rem;
-    }
-}
-
-@media(max-width: 900px){
-    html{
-        font-size: 55%;
+    header{
+        padding: 2rem 3%;
     }
 
     .skills-list{
@@ -1015,6 +1024,36 @@ width: -moz-fit-content; /* necessary for Firefox  */
         gap: 3rem;
         perspective: 800px;
         column-gap: 3rem;
+    }
+
+    .timeline-items::before{
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+
+    .timeline-dot{
+        left: 0;
+    }
+
+    .odd{
+        text-align: left;
+    }
+
+    .contact form{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 2rem 3%;
     }
 }
 
