@@ -2,19 +2,19 @@
 var loader;
 
 // Global menu variables
-var menuIcon;
-var navbar;
-var sections;
-var navLinks;
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.nav-bar');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+let show_menu = false;
 
 // Recursive function to display and fade out the loader
 function loadNow(opacity){
   if(opacity <= 0){
     loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
+    document.getElementById('content').ariaHidden = false;
     displayContent(0)
   } else {
-    console.log("hello");
     loader.style.opacity = opacity;
     loader.style.transform = 'scale(2, 2)';
     window.setTimeout(function (){
@@ -23,44 +23,56 @@ function loadNow(opacity){
   }
 }
 
+
+var targetNode = document.getElementById('content');
+var observer = new MutationObserver(function(){
+    if(targetNode.ariaHidden != true){
+        console.log(navLinks)
+        window.onscroll = () => { 
+            sections.forEach(sec => {
+                let top = window.scrollY;
+                let offset = sec.offsetTop - 150;
+                let height = sec.offsetHeight;
+                let id = sec.getAttribute('id');
+                if(top >= offset && top < offset + height){
+                    navLinks.forEach(links => {
+                        if(links.classList != null){
+                            links.classList.remove('active');
+                        }
+                        document.getElementById(id+'-link').classList.add('active');
+                    })
+                }
+            })
+        }
+
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('bx-x');
+            if(show_menu){
+                navbar.style.display = 'none';
+                show_menu = false;
+            }else {
+                navbar.style.display = 'block';
+                show_menu = true;
+            }
+        }
+    }
+});
+
+observer.observe(targetNode, { attributes: true, childList: true });
+
 // Recursive function to display and fade in the main content
 function displayContent(opa){
   content = document.getElementById('content')
   if(opa >= 1){
     return
-  } else{
-    console.log("hello");
-    window.onscroll = () => {
-        menuIcon = document.querySelector("#menu-icon");
-        navbar = document.querySelector('.nav-bar');
-        sections = document.querySelectorAll('section');
-        navLinks = document.querySelectorAll('header nav a');
-        console.log("hello");
-        sections.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-            console.log("testing");
-            if(top >= offset && top < offset + height){
-                navLinks.forEach(links => {
-                    links.classList.remove('active');
-                    document.querySelector('header nav a [href*=' + id + ' ]').classList.add('active');
-                })
-            }
-        })
-    }
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-    }
-    
+  } else{ 
     content.style.opacity = opa
     window.setTimeout(function(){
       displayContent(opa + 0.05);
     }, 50);
   }
 }
+
 
 // Call to the display loader or display content function based
 // on session cookie
@@ -78,6 +90,5 @@ document.addEventListener("DOMContentLoaded", function() {
     displayContent(0);
   }*/
 });
-
 
 
