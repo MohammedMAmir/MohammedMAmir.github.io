@@ -24,6 +24,11 @@ html{
 body{
     background: var(--bg-color) !important;
     color: var(--text-color) !important;
+    overflow-y: hidden;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
 }
 
 #loader{
@@ -54,7 +59,6 @@ body{
 }
 
 #content{
-    display: none;
     opacity: 0;
 }
 
@@ -955,6 +959,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
         top: 100%;
         right: 0;
         width: 50%;
+        z-index: 288;
         padding: 1rem 3%;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(20px);
@@ -962,10 +967,6 @@ width: -moz-fit-content; /* necessary for Firefox  */
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         display: none;
-    }
-
-    .nav-bar:active{
-        display: block;
     }
 
     .nav-bar a{
