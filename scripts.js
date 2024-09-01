@@ -6,7 +6,9 @@ let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.nav-bar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
-let show_menu = false;
+let body = document.getElementById('body');
+
+
 
 // Recursive function to display and fade out the loader
 function loadNow(opacity){
@@ -27,7 +29,6 @@ function loadNow(opacity){
 var targetNode = document.getElementById('content');
 var observer = new MutationObserver(function(){
     if(targetNode.ariaHidden != true){
-        console.log(navLinks)
         window.onscroll = () => { 
             sections.forEach(sec => {
                 let top = window.scrollY;
@@ -83,6 +84,8 @@ document.addEventListener("DOMContentLoaded", function() {
     loader = document.getElementById('loader');
     loadNow(1, 1);
     }, 3000);
+    console.log(body);
+    
   /*} else{
     loader = document.getElementById('loader');
     loader.style.display = "none";
@@ -91,4 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }*/
 });
 
+
+window.setTimeout(function() {
+    body.classList.remove("noscroll");
+    }, 4000);
 
