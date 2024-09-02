@@ -5,14 +5,27 @@
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
         <title>Mohammed Amir | Portfolio</title>
+        <title>Mohammed Amir | Portfolio</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="apple-touch-icon" sizes="180x180" href="static/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="static/favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="static/favicon_io/favicon-16x16.png">
         <link rel="manifest" href="static/favicon_io/site.webmanifest">
 
+        
+        <!-- Font Awesome Icon - CSS-->
+        <!--
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+        -->
+
+        <!--
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        -->
+
+        <!-- <link href="css/material-icons.min.css" rel="stylesheet"> -->
         
         <!-- Font Awesome Icon - CSS-->
         <!--
@@ -45,7 +58,32 @@
         <meta property="og:image" content="https://mohammedmamir.github.io/examples/preview.JPG" />
         <!-- Google Site Verification for indexing -->
         <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+         <!-- Open Graph-->
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mohammed Amir | Software Engineer" />
+        <meta property="og:description" content="Software Engineer" />
+        <meta property="og:url" content="https://mohammedmamir.github.io/" />
+        <meta property="og:site_name" content="Mohammed Amir | Software Engineer" />
+        <meta property="article:publisher" content="https://mohammedmamir.github.io/" />
+        <meta property="og:image" content="https://mohammedmamir.github.io/examples/preview.JPG" />
+        <!-- Google Site Verification for indexing -->
+        <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
     </head>
+    <body class="noscroll" id="body">
+        <!-- Website Preloader gif -->
+        <div id="loader">
+          <div id="prelogo"></div>
+        </div>
+        <!-- Main website content -->
+        <div id="content" aria-hidden="true">
+          <!-- Nav Bar -->
+          <header class="header">
+            <a href="#home" class="logo">
+                <img class="brand" src="logo2.png"/>
+                Mohammed
+                <span> Amir</span>
     <body class="noscroll" id="body">
         <!-- Website Preloader gif -->
         <div id="loader">
@@ -69,9 +107,33 @@
                 <a href="#experience" id="experience-link">Experience</a>
                 <a href="#projects"id="projects-link">Projects</a>
                 <a href="#contact" id="contact-link">Contact</a>
+            <nav class="nav-bar">
+                <a href="#home"  class="active" id="home-link">Home</a>
+                <a href="#about" id="about-link" >About</a>
+                <a href="#experience" id="experience-link">Experience</a>
+                <a href="#projects"id="projects-link">Projects</a>
+                <a href="#contact" id="contact-link">Contact</a>
             </nav>
           </header>
+          </header>
 
+          <!-- Home Page -->
+          <section class="home" id="home">
+              <div class="home-content">
+                  <h1>Hi, I'm <span>Mohammed</span></h1>
+                  <h3 class="text-animation">I'm a <span></span></h3>
+                  <p>I'm a software engineer and life-long learner with experience in gearing
+                      technology to it's users <!--To me, bits are brushes, keyboards are caligraphy,
+                      and code is creative. I aim to build software for people, and solutions 
+                      for society. Let me know how </p>-->
+                      
+                      <div class="social-icons">
+                          <a href="#"><i class="bx bxl-linkedin"></i></a>
+                          <a href="#"><i class="bx bxl-github"></i></a>
+                          <a href="#"><i class="bx bxs-envelope"></i></a>
+                          <!--<a href="#"></a>
+                          <a href="#"></a>-->
+                      </div>
           <!-- Home Page -->
           <section class="home" id="home">
               <div class="home-content">
@@ -94,12 +156,341 @@
 
                       <div class="butn-group">
                           <a href="#contact" class="butn">Contact</a>
+                          <a href="#" class="butn">Resume</a>
+                      </div>
+                      <div class="butn-group">
+                          <a href="#contact" class="butn">Contact</a>
                           <a href="static/resumes/_Mohammed_Amir_Resume_2024.pdf" target="_blank" class="butn">Resume</a>
                       </div>
                 </div>
                 <div class="home-img">
                       <img src="static/images/profile2.jpeg" alt="">
+                      <img src="static/images/profile2.jpeg" alt="">
                 </div>
+          </section>
+
+          <!-- About Page -->
+          <section class="about" id="about">
+            <h2 class="heading">About Me</h2>
+            <div class="about-container">
+              <div class="skills">
+                <div class="skill-section">
+                  <h4>Programming Languages</h4>
+                  <div class="skills-list">
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">C++</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-cplusplus-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">C</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-c-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">C#</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-csharp-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Python</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="bx bxl-python"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">JavaScript</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="bx bxl-javascript"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Kotlin</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-kotlin-plain"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-section">
+                  <h4>Frontend Development</h4>
+                  <div class="skills-list">
+                    <div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">React</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-react-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">HTML5</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-html5-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">CSS3</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-css3-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Bootstrap</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-bootstrap-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Threejs</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-threejs-original"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-section">
+                  <h4>Backend Development</h4>
+                  <div class="skills-list">
+                    <div></div>
+                    <div></div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">PHP</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-php-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Nodejs</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-nodejs-line"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Flask</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-flask-original"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Expressjs</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-express-original"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-section">
+                  <h4>Databases</h4>
+                  <div class="skills-list">
+                    <div>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">MySQL</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-mysql-original"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">PostgreSQL</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-postgresql-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">SQLite</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-sqlite-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">MongoDB</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-mongodb-plain"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-section">
+                  <h4>DevOps</h4>
+                  <div class="skills-list">
+                    <div></div>
+                    <div></div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">AWS</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Azure</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-azure-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">GCP</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-googlecloud-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Docker</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-docker-plain"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-section">
+                  <h4>Other Tools & Technologies</h4>
+                  <div class="skills-list">
+                    <div></div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">GitHub</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-github-original"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Git</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-git-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Postman</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-postman-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Arduino</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-arduino-plain"></i>
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <div class="skill-bubble">
+                        <p class="skill-name">Figma</p>
+                      </div>
+                      <div class="point-down"></div>
+                      <div class="skill-item">
+                        <i class="devicon-figma-plain"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-text">
+                <h4>I'm a Software Engineer based in Toronto, Canada</h4>
+                <p>
+                  I thrive on tackling intricate, real-world challenges and am
+                  dedicated to honing my skills in the dynamic 
+                  field of software engineering. With a strong foundation in project
+                  management and a collaborative mindset, I excel in working seamlessly 
+                  within team environments to deliver innovative and effective solutions. 
+                  As a graduate from the University of Toronto with 2+ years in database 
+                  management, automation, and programming, I have skills in artificial
+                  intelligence, software engineering, project management, and user 
+                  experience design.
+                </p>
+              </div>
+            </div>
+            
+          </section>
+
+          <!-- Experience Page -->
+          <section class="experience" id="experience">
+              <h2 class="heading">Experience</h2>
+              <div class="timeline-items">
+                  <div class="timeline-item">
           </section>
 
           <!-- About Page -->
@@ -427,6 +818,8 @@
                     <div class="timeline-dot"></div>
                     <div class="timeline-date odd">
                         May, 2022 - Aug, 2023
+                    <div class="timeline-date odd">
+                        May, 2022 - Aug, 2023
                     </div>
                     <div class="timeline-content">
                       <div class="timeline-header">
@@ -435,7 +828,15 @@
                             </div>
                           </div>
                       </div>
+                      <div class="timeline-header">
+                          <div class="header-text">
+                            <div class="company">
+                            </div>
+                          </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="timeline-item">
                   </div>
                   <div class="timeline-item">
                     <div class="timeline-dot"></div>
@@ -608,10 +1009,294 @@
                         <p class="card-description"></p>
                       </div>
                       <button class="card_button"></button>
+                    <div class="timeline-date even">
+                        May, 2021 - Aug, 2022
+                    </div>
+                    <div class="timeline-content">
+                      <div class="timeline-header">
+                          <div class="header-text">
+                            <div class="company">
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-date odd">
+                          May, 2022 - Aug, 2023
+                      </div>
+                      <div class="timeline-content">
+                          <div class="timeline-header">
+                              <div class="header-text">
+                                <div class="company">
+                                  <a href="https://www.humanendeavour.org/" target="_blank"><h3>Human Endeavour</h3></a>
+                                </div>
+                                <div class="role">
+                                  Junior Software Developer
+                                </div>
+                              </div>
+                              <div class="header-logo">
+                                <a href="https://www.humanendeavour.org/" target="_blank"><img alt="Human Endeavour logo"
+                                  src="static/images/logo-footer.png" class="responsive-img center-block" /></a>
+                              </div>
+                          </div>
+                            <p>
+                              <ul>
+                                <li>
+                                  Initiated, planned, and administered the design and marketing of a line assistive tablets to aid visually impaired
+                                  users as well as those living with dementia in Activities of Daily Living
+                                </li>
+                                <li>
+                                  Devised infrastructure to quickly replicate and update features and programs on deployed tablets, as well as a system 
+                                  of version control to track software updates
+                                </li>
+                                <li>
+                                  Created clear, concise, and simplified manual to technically assist users and caretakers regarding features of assistive 
+                                  tablets</li>
+                                <li>
+                                  Formulated database to track tablet usage, performance, and inventory to allow for data-driven insights in how to improve 
+                                  and manage products and features
+                                </li>
+                                <li>
+                                  Built a scanner app using Android macros, Google API calls, Google Sheets macros, and Google Apps Scripts to
+                                  automate the scanning, tracking, and management of inventory
+                                </li>
+                                <li>
+                                  <b>Tools:</b> C++, Kotlin, MySQL, Python, Google Apps Scripts, MacroDroid, Tasker, RESTful APIs
+                                </li>
+                              </ul>
+                            </p>
+                      </div>
+                  </div>-->
+
+                  <div class="timeline-item">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-date odd">
+                          2012 - 2018
+                      </div>
+                      <div class="timeline-content">
+                          <h3>High School</h3>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                              Voluptatum tempore dolor doloremque obcaecati velit, ipsum, 
+                              atione ab fugiat, repellendus quia rem ut quidem quas? 
+                              Quidem modi repellendus odio praesentium alias!</p>
+                      </div>
+                  </div> 
+              </div>
+          </section>
+
+          <!-- Project Page -->
+          <section class="projects" id="projects">
+            <div class="projects-box">
+              <h2 class="heading">Projects</h2>
+              <div class="wrapper">
+                <article class="project-item">
+                  <img src="static/images/unboxeng.png" style="object-position: 0% 0;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Unboxing Engineering</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/occasional.png" style="object-fit:fill;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">UofT Occasional App</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/ethos2.png" style="object-fit: fill; object-position: 10% -20%;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Ethos Open-Source Project</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/resnet_ALL.jpg" style="object-position: 0% 0;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Leukemia AI Classifier</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/textconference.jpg" style="object-position: 50% 0;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Text Conferencing App</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/AMC.png" style="object-position: 0% 0;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Atlas Meets Computer</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/unboxeng.png" style="object-position: 0% 0;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Unboxing Engineering</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
+                    </div>
+                </article>
+                <article class="project-item">
+                  <img src="static/images/unboxeng.png" style="object-position: 0% 0;"
+                   class="card-background" />
+                   <div class="card-content flow">
+                      <div class="card-content-container">
+                        <h2 class="card-title">Unboxing Engineering</h2>
+                        <p class="card-description"></p>
+                      </div>
+                      <button class="card_button"></button>
                     </div>
                 </article>
               </div>
+                </article>
+              </div>
             </div>
+          </section>
+
+          <!-- Contact Me Page -->
+          <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action="">
+              <div class="input-group">
+                <div class="input-box">
+                  <input type="text" 
+                  placeholder="Full Name">
+                  <input type="email"
+                  placeholder="Email">
+                </div>
+                <div class="input-box">
+                  <input type="number"
+                  placeholder="Phone Number">
+                  <input type="text"
+                  placeholder="Subject">
+                </div>
+              </div>
+
+              <div class="input-group-2">
+                <textarea name="" id="" cols="30"
+                rows="13" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="butn">
+              </div>
+            </form>
+          </section>
+        
+          <footer class="footer">
+            <div class="social">
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+              <a href="#"><i class="bx bxl-github"></i></a>
+              <a href="#"><i class="bx bxs-envelope"></i></a>
+            </div>
+  
+            <ul class="list">
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Experience</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">About Me</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <p class="copyright">
+              © Mohammed Amir | All Rights Reserved
+            </p>
+          </footer>
+          
+        </div>
+        <script type="text/javascript" src="scripts.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+         crossorigin="anonymous"></script>-->
+         <script type="text/javascript">
+            // Store the loader globally
+            var loader;
+
+            // Recursive function to display and fade out the loader
+            function loadNow(opacity){
+              if(opacity <= 0){
+                loader.style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                displayContent(0)
+              } else {
+                loader.style.opacity = opacity;
+                loader.style.transform = 'scale(2, 2)';
+                window.setTimeout(function (){
+                  loadNow(opacity - 0.05)
+                }, 50);
+              }
+            }
+
+            // Recursive function to display and fade in the main content
+            function displayContent(opa){
+              content = document.getElementById('content')
+              if(opa >= 1){
+                return
+              } else{
+                content.style.opacity = opa
+                window.setTimeout(function(){
+                  displayContent(opa + 0.05);
+                }, 50);
+              }
+            }
+
+            // Call to the display loader or display content function based
+            // on session cookie
+            document.addEventListener("DOMContentLoaded", function() {
+             // if(!sessionStorage.getItem('preLoaded')){
+                sessionStorage.setItem('preLoaded', true);
+                window.setTimeout(function() {
+                loader = document.getElementById('loader');
+                loadNow(1, 1);
+                }, 3000);
+              /*} else{
+                loader = document.getElementById('loader');
+                loader.style.display = "none";
+                document.getElementById('content').style.display = 'block';
+                displayContent(0);
+              }*/
+            });
+         </script>
           </section>
 
           <!-- Contact Me Page -->
