@@ -1368,54 +1368,5 @@
         <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
          crossorigin="anonymous"></script>-->
-         <script type="text/javascript">
-            // Store the loader globally
-            var loader;
-
-            // Recursive function to display and fade out the loader
-            function loadNow(opacity){
-              if(opacity <= 0){
-                loader.style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-                displayContent(0)
-              } else {
-                loader.style.opacity = opacity;
-                loader.style.transform = 'scale(2, 2)';
-                window.setTimeout(function (){
-                  loadNow(opacity - 0.05)
-                }, 50);
-              }
-            }
-
-            // Recursive function to display and fade in the main content
-            function displayContent(opa){
-              content = document.getElementById('content')
-              if(opa >= 1){
-                return
-              } else{
-                content.style.opacity = opa
-                window.setTimeout(function(){
-                  displayContent(opa + 0.05);
-                }, 50);
-              }
-            }
-
-            // Call to the display loader or display content function based
-            // on session cookie
-            document.addEventListener("DOMContentLoaded", function() {
-             // if(!sessionStorage.getItem('preLoaded')){
-                sessionStorage.setItem('preLoaded', true);
-                window.setTimeout(function() {
-                loader = document.getElementById('loader');
-                loadNow(1, 1);
-                }, 3000);
-              /*} else{
-                loader = document.getElementById('loader');
-                loader.style.display = "none";
-                document.getElementById('content').style.display = 'block';
-                displayContent(0);
-              }*/
-            });
-         </script>
     </body>
 </html>
