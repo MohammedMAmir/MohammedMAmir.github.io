@@ -77,22 +77,24 @@
               <div class="home-content">
                   <h1>Hi, I'm <span>Mohammed</span></h1>
                   <h3 class="text-animation">I'm a <span></span></h3>
-                  <p>I'm a software engineer and life-long learner with experience in gearing
-                      technology to it's users <!--To me, bits are brushes, keyboards are caligraphy,
-                      and code is creative. I aim to build software for people, and solutions 
-                      for society. Let me know how </p>-->
+                  <p>As a software engineer and lifelong learner, I see 
+                    technology as my canvas for innovation. I transform 
+                    intricate systems into intuitive masterpieces, 
+                    crafting solutions that blend clarity with user-centric
+                    design. Eager to shape the future, I strive to be at 
+                    the cutting edge of tech breakthroughs, painting each 
+                    project with a vision of seamless functionality and 
+                    engaging user experiences.</p>
                       
                       <div class="social-icons">
-                          <a href="#"><i class="bx bxl-linkedin"></i></a>
-                          <a href="#"><i class="bx bxl-github"></i></a>
-                          <a href="#"><i class="bx bxs-envelope"></i></a>
-                          <!--<a href="#"></a>
-                          <a href="#"></a>-->
+                          <a href="https://www.linkedin.com/mohammedmamir"><i class="bx bxl-linkedin"></i></a>
+                          <a href="https://www.github.com/mohammedmamir"><i class="bx bxl-github"></i></a>
+                          <a href="mailto:mohammedmamir@hotmail.com"><i class="bx bxs-envelope"></i></a>
                       </div>
 
                       <div class="butn-group">
                           <a href="#contact" class="butn">Contact</a>
-                          <a href="#" class="butn">Resume</a>
+                          <a href="static/resumes/_Mohammed_Amir_Resume_2024.pdf" target="_blank" class="butn">Resume</a>
                       </div>
                 </div>
                 <div class="home-img">
@@ -616,25 +618,33 @@
           <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
-            <form action="">
+            <form action="send_email.php" method="post">
               <div class="input-group">
                 <div class="input-box">
                   <input type="text" 
-                  placeholder="Full Name">
+                  placeholder="Full Name"
+                  id="name"
+                  required>
                   <input type="email"
-                  placeholder="Email">
+                  id="email"
+                  placeholder="Email"
+                  required>
                 </div>
                 <div class="input-box">
                   <input type="number"
-                  placeholder="Phone Number">
+                  placeholder="Phone Number"
+                  id="phone_number"
+                  required>
                   <input type="text"
-                  placeholder="Subject">
+                  placeholder="Subject"
+                  id="subject"
+                  required>
                 </div>
               </div>
 
               <div class="input-group-2">
-                <textarea name="" id="" cols="30"
-                rows="13" placeholder="Your Message"></textarea>
+                <textarea name="" id="message" cols="30"
+                rows="13" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="butn">
               </div>
             </form>
