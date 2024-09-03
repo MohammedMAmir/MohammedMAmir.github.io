@@ -772,7 +772,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
 }
 
 .contact form textarea{
-    margin: .4rem;
+    margin-top: .4rem;
 }
 
 .contact form .butn{
