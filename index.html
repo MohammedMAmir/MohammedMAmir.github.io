@@ -619,32 +619,36 @@
           <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
-            <form action="https://forms.un-static.com/forms/07e458c16cfcc4c72877da687dbe6554f2afc431" method="post">
+            <form action="https://formspree.io/f/mvgpyglz" method="post">
               <div class="input-group">
                 <div class="input-box">
                   <input type="text" 
                   placeholder="Full Name"
                   id="name"
+                  name="name"
                   required>
                   <input type="email"
                   id="email"
+                  name="email"
                   placeholder="Email"
                   required>
                 </div>
                 <div class="input-box">
                   <input type="number"
                   placeholder="Phone Number"
+                  name="phone_number"
                   id="phone_number"
                   required>
                   <input type="text"
                   placeholder="Subject"
+                  name="subject"
                   id="subject"
                   required>
                 </div>
               </div>
 
               <div class="input-group-2">
-                <textarea name="" id="message" cols="30"
+                <textarea name="message" id="message" cols="30"
                 rows="13" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="butn">
               </div>
