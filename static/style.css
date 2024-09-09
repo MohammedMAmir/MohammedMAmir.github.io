@@ -614,6 +614,11 @@ span{
     margin-bottom: 5px;
 }
 
+.timeline-header .company{
+    font-size: 20px;
+    font-weight: 800;
+}
+
 .timeline-content a{
     font-size: 40px;
     color: white;
