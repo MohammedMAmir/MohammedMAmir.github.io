@@ -615,8 +615,9 @@ span{
 }
 
 .timeline-header .company{
-    font-size: 20px;
+    font-size: 2.2rem;
     font-weight: 800;
+    margin-bottom: .8rem;
 }
 
 .timeline-content a{
@@ -624,26 +625,32 @@ span{
     color: white;
     margin: 0 0 10px;
     font-weight: 500;
+    justify-self: end;
 }
 
 .header-logo{
+    justify-content: flex-end;
+    text-align: right;
     float: right;
+    margin-right: 3rem;
+    margin-left: auto;
 }
 
 .timeline-content a img{
-    float: right;
-    max-height: 5rem !important;
+    justify-content: end;
+    max-height: 5.4rem !important;
     width: auto;
+    margin-right: 5px;
 }
 
 .timeline-content .role{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--main-color);
 }
 
 .timeline-content li{
     color: white;
-    font-size: 1.3rem!important;
+    font-size: 1.4rem!important;
     font-weight: 300;
     line-height: 22px;
 }
