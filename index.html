@@ -35,7 +35,17 @@
             gtag('config', 'UA-126939217-2');
         </script>
 
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script> 
+
+        <script> 
+
+          function onSubmit(token) { 
+       
+            document.getElementById("contact-form").submit(); 
+       
+          } 
+       
+        </script> 
 
          <!-- Open Graph-->
         <meta property="og:locale" content="en_US" />
@@ -663,8 +673,10 @@
               <div class="input-group-2">
                 <textarea name="message" id="message" cols="25"
                 rows="13" placeholder="Your Message" required></textarea>
-                <div class="g-recaptcha" data-sitekey="123WAEAE123134"></div>
-                <input type="submit" value="Send Message" class="butn" />
+                <button type="submit" value="Send Message" class="butn g-recaptcha"
+                  data-sitekey="6LcO6z0qAAAAAEgUAF-eNhbuQw324wRIz-pQYgKq"  
+                  data-callback='onSubmit'  
+                  data-action='submit'>Submit</button>
               </div>
             </form>
           </section>

@@ -94,11 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }*/
 });
 
+
 window.setTimeout(function() {
     body.classList.remove("noscroll");
     }, 4000);
 
-// The captcha token for form submission
-function onSubmit(token) {
-     document.getElementById("contact-form").submit();
-}
