@@ -1160,6 +1160,7 @@ body.noscroll::-webkit-scrollbar{
     }
 
     .about-text{
+        min-height: 600px;
         min-width: 38rem;
         width: 90%;
     }
