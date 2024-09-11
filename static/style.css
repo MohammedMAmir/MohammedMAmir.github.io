@@ -482,7 +482,7 @@ span{
     padding: 5rem 5rem;
     min-height: 800px;
     width: 100%;
-    min-width: 450px;
+    min-width: 45rem;
 }
 
 .about-text h4{
@@ -1184,11 +1184,17 @@ body.noscroll::-webkit-scrollbar{
     .skill-item{
         display: inline-block;
         font-size: 45px;
-        margin-right: 20
-        px;
+        margin-right: 20px;
+        padding-top: 12px;
     }
 
     .skills h4{
         text-align: center;
+    }
+
+    .skill-item i{
+        object-fit: contain;
+        transition: filter 1s;
+        z-index: 1;
     }
 }
