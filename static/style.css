@@ -481,8 +481,8 @@ span{
     align-items: baseline;
     padding: 5rem 5rem;
     min-height: 800px;
-    width: 95%;
-    min-width: 550px;
+    width: 100%;
+    min-width: 450px;
 }
 
 .about-text h4{
