@@ -930,8 +930,8 @@ width: -moz-fit-content; /* necessary for Firefox  */
 @media (any-hover: hover) and (any-pointer: fine) {
     .card-content {
       transform: translateY(80%);
-      transition: transform 500ms ease-out;
-      transition-delay: 500ms;
+      transition: transform 200ms ease-out;
+      transition-delay: 200ms;
       
     }
   
@@ -982,7 +982,7 @@ width: -moz-fit-content; /* necessary for Firefox  */
     .project-item:focus-within .card-button {
       opacity: 1;
       transition: opacity 500ms ease-in;
-      transition-delay: 1000ms;
+      transition-delay: 500ms;
     }
   
     .project-item:hover .card-title::after,
