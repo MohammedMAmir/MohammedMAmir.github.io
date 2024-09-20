@@ -3,6 +3,8 @@ Hi, my name is Mohammed Amir. I'm a software engineer, full-stack developer, pro
 and project management expert based in Toronto, Ontario, Canada. Have a look at my portfolio, 
 the recent projects I've worked on, and feel free to get in touch.
 
+![A preview of the website](static/images/snapshot.png)
+
 ## The Portfolio:
 The website can be found at: https://mohammedmamir.github.io
 The portfolio itself is loosely based off of Amelia Morgan's template along with my 
