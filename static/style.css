@@ -131,6 +131,13 @@ section{
     padding: 10rem 12% 10rem;
 }
 
+#particles-js{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
 .home{
     display: flex;
     align-items: center;
