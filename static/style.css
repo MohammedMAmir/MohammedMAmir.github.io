@@ -1172,6 +1172,7 @@ body.noscroll::-webkit-scrollbar{
     .skills-list{
         display: flex;
         height: 4rem;
+        min-width: 90%;
         max-width: 90%;
         padding-bottom: 3rem;
         grid-template-columns: repeat(6, 1fr);
