@@ -440,9 +440,9 @@ span{
     transition: display 1s;
     width: 0px;
     height: 0px;
-    border-top: 8px solid var(--bg-color);
-    border-left: 11px solid transparent;
-    border-right: 11px solid transparent;
+    border-top: .8rem solid var(--bg-color);
+    border-left: 1.1rem solid transparent;
+    border-right: 1.1rem solid transparent;
     margin: -10px auto 0 auto;
 }
 
