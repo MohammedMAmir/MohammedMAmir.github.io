@@ -1195,7 +1195,7 @@ body.noscroll::-webkit-scrollbar{
         display: inline-block;
         font-size: 4rem;
         padding: 12px;
-        padding-bottom: 0px;
+        padding-bottom: .7rem;
         min-width: 6rem;
     }
 
