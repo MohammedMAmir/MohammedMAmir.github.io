@@ -1179,7 +1179,6 @@ body.noscroll::-webkit-scrollbar{
         grid-template-rows: repeat(1, 1fr);
         row-gap: 25px;
         margin-right: 10px;
-        margin-left: 10px;
     }
 
     .empty-list{
