@@ -1178,6 +1178,8 @@ body.noscroll::-webkit-scrollbar{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(1, 1fr);
         row-gap: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .empty-list{
@@ -1194,7 +1196,7 @@ body.noscroll::-webkit-scrollbar{
         display: inline-block;
         font-size: 4rem;
         padding: 12px;
-        padding-bottom: 5px;
+        padding-bottom: 0px;
         min-width: 6rem;
     }
 
