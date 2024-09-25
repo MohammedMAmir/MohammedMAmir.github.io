@@ -8,3 +8,4 @@ Disallow: /Assets
 Disallow: /Autosave
 Allow: /static/*
 Allow: /
+Allow: /fav
