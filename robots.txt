@@ -1,0 +1,10 @@
+# robots.txt file for Mohammed Amir's portfolio
+
+User-agent: *
+Disallow: /Renders
+Disallow: /Scenes
+Disallow: /archive
+Disallow: /Assets
+Disallow: /Autosave
+Allow: /static
+Allow: /
