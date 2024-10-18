@@ -1092,13 +1092,16 @@ body.noscroll::-webkit-scrollbar{
     .skills-list{
         height: 5vw;
         padding-bottom: 3rem;
+        margin-bottom: 2.5rem;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         row-gap: 10%;
+        column-gap: 4%;
     }
 
     .skill-item{
         font-size: 25px;
+        margin-bottom: .8rem;
     }
 
     .skill-section + .skill-section{
@@ -1178,7 +1181,7 @@ body.noscroll::-webkit-scrollbar{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(1, 1fr);
         row-gap: 25px;
-        margin-right: 20px;
+        justify-content: center;
     }
 
     .empty-list{
@@ -1187,7 +1190,7 @@ body.noscroll::-webkit-scrollbar{
 
     .skill-item + .skill-item{
         margin-left: 0px;
-        
+        margin-right: 0px;
     }
 
     .skill-item{
