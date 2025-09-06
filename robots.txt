@@ -6,6 +6,8 @@ Disallow: /Scenes
 Disallow: /archive
 Disallow: /Assets
 Disallow: /Autosave
-Allow: /static/*
+Disallow: /static/resumes
+Allow: /static/images
+Allow: /static/favicons
 Allow: /
 Allow: /fav
