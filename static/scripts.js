@@ -7,7 +7,7 @@ let navbar = document.querySelector('.nav-bar');
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 let body = document.getElementById('body');
-
+let show_menu = false;
 
 
 // Recursive function to display and fade out the loader
