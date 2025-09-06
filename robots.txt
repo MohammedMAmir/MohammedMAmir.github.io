@@ -6,6 +6,12 @@ Disallow: /Scenes
 Disallow: /archive
 Disallow: /Assets
 Disallow: /Autosave
+<<<<<<< Updated upstream
 Allow: /static/*
+=======
+Disallow: /static/resumes
+Allow: /static/images
+Allow: /static/favicons
+>>>>>>> Stashed changes
 Allow: /
 Allow: /fav
